@@ -7,7 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin = {"pretty"},
+		
+		format ={"pretty","html:output/report.html","json:output/report.json","junit:output/report.xml"},
 		glue = {"stepdefs"},
-		features = {"src/test/features"})
+		features = {"src/test/features"}
+		)
 public class CucumberTests {}
