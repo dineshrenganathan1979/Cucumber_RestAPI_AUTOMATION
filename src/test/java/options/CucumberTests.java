@@ -10,6 +10,9 @@ import cucumber.api.junit.Cucumber;
 		
 		format ={"pretty","html:output/report.html","json:output/report.json","junit:output/report.xml"},
 		glue = {"stepdefs"},
-		features = {"src/test/features"}
+		features = {"src/test/features"},
+		monochrome = true,
+		dryRun = false,
+		strict = true
 		)
 public class CucumberTests {}
